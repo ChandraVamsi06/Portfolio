@@ -149,7 +149,7 @@ a {
 #certifications {
     scroll-margin-top: 80px;
 }
-.contact {
+/* .contact {
     margin-left: 30%;
     padding-left: 20px;
     height: auto;
@@ -165,7 +165,7 @@ a {
     line-height: 1;
 }
 .contact p, h1, h2 {
-    color: white;
+    color: white; */
 }
 .profile {
     display: flex;
