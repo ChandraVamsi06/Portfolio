@@ -1,5 +1,5 @@
 body {
-/*     position: relative; */
+    /* position: relative; */
     background-image: url('https://img.freepik.com/free-vector/futuristic-background-design_23-2148503793.jpg');
     background-size: cover;
     background-position: center;
@@ -43,11 +43,14 @@ html {
     /* font-size: 20px; */
     color: black;
     /* text-align: center; */
-    color: rgb(72, 241, 72);
+    color: gold;
+}
+.card p a {
+    color: red;
 }
 .container .card:hover,
 .container .card.active {
-    box-shadow: 0px 0px 15px rgb(78, 255, 78);
+    box-shadow: 0px 0px 15px red;
 }
 a {
     color: rgb(37, 15, 147);
@@ -63,7 +66,7 @@ a {
     display: flex;
     /* justify-content: space-evenly; */
     align-items: center;
-    z-index: 100;
+    /* z-index: 100; */
     backdrop-filter: blur(10px);
     /* border: 2px solid white; */
 }
@@ -95,7 +98,9 @@ a {
 }
 .navbar ul li:hover a,
 .navbar ul li.active a {
-    color: rgb(11, 252, 172);
+    border-width: 30px 10px;
+    box-shadow: 0px 0px 5px 5px red;
+    color: gold;
     text-decoration: none;
 }
 .home {
@@ -121,7 +126,7 @@ a {
     padding-top: 0%;
     align-items: center;
     background: transparent;
-    box-shadow: 0px 0px 40px rgb(255, 173, 65);
+    box-shadow: 0px 0px 40px gold;
     margin-top: 150px;
 }
 .image img {
@@ -131,7 +136,7 @@ a {
 }
 .home div img:hover,
  .home div img.active {
-    box-shadow: 0 0 40px skyblue;
+    box-shadow: 0 0 40px red;
 }
 .about {
     color: rgb(242, 255, 233);
@@ -148,24 +153,6 @@ a {
 }
 #certifications {
     scroll-margin-top: 80px;
-}
-/* .contact {
-    margin-left: 30%;
-    padding-left: 20px;
-    height: auto;
-    width: 500px;
-    line-height: 10px;
-    border-radius: 10px;
-    background-color: transparent;
-    box-shadow: 0 0 10px rgb(73, 245, 219);
-    border: 2px solid rgb(0, 0, 0);
-    max-width: 1000px;
-    margin-top: 100px;
-    font-size: 20px;
-    line-height: 1;
-}
-.contact p, h1, h2 {
-    color: white; */
 }
 .profile {
     display: flex;
