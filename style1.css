@@ -230,9 +230,6 @@ footer {
     }
 }
 @media (max-width: 768px) {
-    .home {
-        padding-top: 50px;
-    }
     .hamburger {
         display: block;
         position: absolute;
