@@ -58,11 +58,11 @@ a {
     left: 0;
     top: 0;
     width: 100%;
-    padding: 20px 30px;
+    max-width: 1200px;
+    padding: 20px 40px;
     display: flex;
     align-items: center;
     backdrop-filter: blur(10px);
-    z-index: 1000;
 }
 .navbar .logo {
     color: white;
@@ -230,12 +230,14 @@ footer {
     }
 }
 @media (max-width: 768px) {
+    .home {
+        padding-top: 50px;
+    }
     .hamburger {
         display: block;
         position: absolute;
         top: 25px;
-        right: 30px;
-        z-index: 2000;
+        right: 60px;
     }
     .navbar {
         flex-direction: column;
