@@ -1,5 +1,4 @@
 body {
-    /* position: relative; */
     background-image: url('https://img.freepik.com/free-vector/futuristic-background-design_23-2148503793.jpg');
     background-size: cover;
     background-position: center;
@@ -40,9 +39,6 @@ html {
 }
 .card h2, .card p, .card h4 {
     padding-left: 50px;
-    /* font-size: 20px; */
-    color: black;
-    /* text-align: center; */
     color: gold;
 }
 .card p a {
@@ -61,14 +57,12 @@ a {
     position: fixed;
     left: 0;
     top: 0;
-    width: 95%;
+    width: 100%;
     padding: 20px 30px;
     display: flex;
-    /* justify-content: space-evenly; */
     align-items: center;
-    /* z-index: 100; */
     backdrop-filter: blur(10px);
-    /* border: 2px solid white; */
+    z-index: 1000;
 }
 .navbar .logo {
     color: white;
@@ -83,12 +77,10 @@ a {
     list-style: none;
     display: flex;
     margin-left: auto;
-    /* justify-content: space-evenly; */
 }
 .navbar ul li {
     list-style: none;
     margin-left: 20px;
-    /* justify-content: space-evenly; */
 }
 .navbar ul li a {
     font-size: 18px;
@@ -98,7 +90,6 @@ a {
 }
 .navbar ul li:hover a,
 .navbar ul li.active a {
-    border-width: 30px 10px;
     box-shadow: 0px 0px 5px 5px red;
     color: gold;
     text-decoration: none;
@@ -109,7 +100,6 @@ a {
     justify-content: space-between;
     width: 90%;
     padding: 30px;
-    /* max-width: 1200px; */
 }
 .text {
     width: 50%;
@@ -135,7 +125,7 @@ a {
     object-fit: cover;
 }
 .home div img:hover,
- .home div img.active {
+.home div img.active {
     box-shadow: 0 0 40px red;
 }
 .about {
@@ -184,5 +174,134 @@ footer {
     padding: 20px;
     text-align: center;
     justify-content: center;
-    /* position: relative; */
+}
+.menu-toggle {
+    display: none;
+}
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .card h2, .card p, .card h4 {
+        padding-left: 0;
+        font-size: 18px;
+    }
+    .home {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .text {
+        width: 90%;
+        font-size: 18px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .image {
+        width: 250px;
+        height: 250px;
+        margin-top: 50px;
+    }
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .navbar ul li {
+        margin: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        z-index: 2000;
+    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 15px 0;
+        z-index: 1000;
+    }
+    .menu-toggle:checked + .hamburger + ul {
+        display: flex;
+    }
+    .navbar ul li {
+        margin-left: 20px;
+        padding: 5px 0;
+    }
+    .text {
+        width: 100%;
+        font-size: 16px;
+        padding: 0;
+        text-align: center;
+    }
+    .image {
+        width: 200px;
+        height: 200px;
+        margin-top: 30px;
+    }
+    .card {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+    .card h2, .card p, .card h4 {
+        padding-left: 0;
+        font-size: 16px;
+        text-align: center;
+    }
+    .profile {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .profile a {
+        padding: 10px;
+    }
+    .about {
+        font-size: 16px;
+        padding: 15px;
+    }
+    .logo img {
+        height: 40px;
+    }
+    .profile {
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer {
+        font-size: 14px;
+    }
 }
