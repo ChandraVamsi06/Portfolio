@@ -231,11 +231,6 @@ footer {
         margin: 10px;
     }
 }
-@media (max-width: 768px) {
-    body {
-        margin-top: 50px;
-    }
-}
 @media (max-width: 425px) {
     body {
         margin-top: 50px;
